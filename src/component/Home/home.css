@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  /* Set the background color with opacity */
+
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f0e0e;
+  z-index: 999;
+}
+
+
+
+.homeBack {
+ 
+  background-image: url('../../images/homebac2.jpg');
+  background-repeat: no-repeat;
+  /* Set the background size to a larger value to make the image appear larger than the container */
+  background-size: 100% 100%; /* Adjust the percentage as needed */
+  /* Center the image both horizontally and vertically */
+ 
+  
+  /* Create a semi-transparent overlay with a dark color */
+  background-color: rgba(9, 0, 0, 0.971); 
+  /* Adjust the color and opacity as needed */
+
+  
+}
+.sub-div {
+ 
+  background-image: url('../../images/sub-div.jfif');
+  background-repeat: no-repeat;
+  /* Set the background size to a larger value to make the image appear larger than the container */
+  background-size: 100% 100%; /* Adjust the percentage as needed */
+  /* Center the image both horizontally and vertically */
+  
+  
+  /* Create a semi-transparent overlay with a dark color */
+  background-color: rgba(9, 0, 0, 0.971); 
+  /* Adjust the color and opacity as needed */
+
+  
+}
+.hompepage-tag-line {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hompepage-tag-line span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* CSS */
+
+
